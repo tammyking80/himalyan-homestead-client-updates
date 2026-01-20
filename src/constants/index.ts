@@ -495,6 +495,7 @@ export const GALLERY_IMAGES = [
   { src: '/homemade-food/cuisine-images/shahi-paneer.jpg', category: 'Food', alt: 'Shahi Paneer - Rich curry' },
   { src: '/homemade-food/cuisine-images/masala-tea.webp', category: 'Food', alt: 'Masala Tea - Spiced chai' },
   { src: '/homemade-food/cuisine-images/himachali-dham.webp', category: 'Food', alt: 'Himachali Dham - Traditional feast' },
+  { src: '/homemade-food/cuisine-images/homemade-food-banner.jpg', category: 'Food', alt: 'Homemade Himalayan Kitchen' },
 ];
 
 export const POLICIES = [
