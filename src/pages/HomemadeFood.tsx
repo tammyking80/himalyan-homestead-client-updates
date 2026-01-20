@@ -126,7 +126,7 @@ function HeroSection() {
     <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
       <div className="absolute inset-0">
         <img
-          src="/homemade-food/cuisine-images/shahi-paneer.jpg"
+          src="/homemade-food/cuisine-images/homemade-food-banner.jpg"
           alt="Homemade Indian food"
           className="w-full h-full object-cover"
         />
