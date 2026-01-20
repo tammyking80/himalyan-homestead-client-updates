@@ -490,6 +490,11 @@ export const GALLERY_IMAGES = [
   { src: '/amenities/bathroom-ntoiletries.jpg', category: 'Rooms', alt: 'Bathroom with toiletries' },
   { src: '/amenities/living-n-common-areas.jpg', category: 'Common Areas', alt: 'Living and common areas' },
   { src: '/quiet-evenings.jpeg', category: 'Rooftop & Views', alt: 'Quiet evenings with mountain views' },
+  { src: '/homemade-food/cuisine-images/food-gallery.jpg', category: 'Food', alt: 'Homemade food spread' },
+  { src: '/homemade-food/cuisine-images/vegetable-poha.jpg', category: 'Food', alt: 'Vegetable Poha - Light breakfast' },
+  { src: '/homemade-food/cuisine-images/shahi-paneer.jpg', category: 'Food', alt: 'Shahi Paneer - Rich curry' },
+  { src: '/homemade-food/cuisine-images/masala-tea.webp', category: 'Food', alt: 'Masala Tea - Spiced chai' },
+  { src: '/homemade-food/cuisine-images/himachali-dham.webp', category: 'Food', alt: 'Himachali Dham - Traditional feast' },
 ];
 
 export const POLICIES = [
