@@ -346,7 +346,15 @@ function FoodGallery() {
           Every dish is prepared fresh in our kitchen, using locally sourced ingredients and traditional recipes passed down through generations.
         </p>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl mx-auto">
+        <div className="col-span-2 row-span-2 rounded-xl overflow-hidden">
+          <img
+            src="/homemade-food/cuisine-images/food-gallery.jpg"
+            alt="Homemade food spread"
+            className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+          />
+        </div>
         {foodImages.map((image, idx) => (
           <div key={idx} className="aspect-square rounded-xl overflow-hidden">
             <img
