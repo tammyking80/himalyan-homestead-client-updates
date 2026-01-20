@@ -1,7 +1,7 @@
 export const CONTACT = {
   phones: ['+919877865729', '+919872925078'],
   whatsapp: '+919877865729',
-  email: 'himalayavalleyhomestead@gmail.com',
+  email: 'himalayanvalleyhomestead@gmail.com',
   address: {
     line1: 'Dharaman Utrala Road, Sornu',
     line2: 'Palampur, Himachal Pradesh – 176061',
@@ -500,11 +500,11 @@ export const GALLERY_IMAGES = [
 export const POLICIES = [
   {
     title: 'Check-in Time',
-    content: 'Check-in time is 11:00 AM. Early check-in may be available on request, subject to availability.',
+    content: 'Check-in time is 2:00 PM. Early check-in may be available on request, subject to availability.',
   },
   {
     title: 'Check-out Time',
-    content: 'Check-out time is 2:00 PM. Late check-out may be available on request, subject to availability.',
+    content: 'Check-out time is 10:00 AM. Late check-out may be available on request, subject to availability.',
   },
   {
     title: 'Identification',
@@ -541,8 +541,8 @@ export const DETAILED_POLICIES = {
     title: 'Check-in & Check-out',
     icon: 'Clock',
     items: [
-      { label: 'Check-in Time', value: '11:00 AM onwards' },
-      { label: 'Check-out Time', value: '2:00 PM' },
+      { label: 'Check-in Time', value: '2:00 PM onwards' },
+      { label: 'Check-out Time', value: '10:00 AM' },
       { label: 'Early Check-in', value: 'Available on request (subject to availability)' },
       { label: 'Late Check-out', value: 'Available on request (additional charges may apply)' },
       { label: 'Self Check-in', value: 'Available with prior arrangement' },
@@ -641,7 +641,7 @@ export const DETAILED_POLICIES = {
       { label: 'CCTV Surveillance', value: '8 cameras installed for 24/7 monitoring' },
       { label: 'Fire Safety', value: 'Extinguishers and smoke detectors installed' },
       { label: 'First Aid', value: 'Basic first aid kit available' },
-      { label: 'Emergency', value: 'Local hospital within 15 km' },
+      { label: 'Emergency', value: 'Local hospital within 6 km' },
       { label: 'Valuables', value: 'Guests responsible for personal belongings' },
     ],
     note: 'Emergency contact numbers and local hospital information provided at check-in.',
