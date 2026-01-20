@@ -126,7 +126,7 @@ function HeroSection() {
     <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
       <div className="absolute inset-0">
         <img
-          src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1920"
+          src="/homemade-food/cuisine-images/shahi-paneer.jpg"
           alt="Homemade Indian food"
           className="w-full h-full object-cover"
         />
@@ -327,10 +327,10 @@ function MenuImagePreview() {
 
 function FoodGallery() {
   const foodImages = [
-    { src: 'https://images.pexels.com/photos/7625056/pexels-photo-7625056.jpeg?auto=compress&cs=tinysrgb&w=600', alt: 'Parantha breakfast' },
-    { src: 'https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&w=600', alt: 'Dal and rice' },
-    { src: 'https://images.pexels.com/photos/9609838/pexels-photo-9609838.jpeg?auto=compress&cs=tinysrgb&w=600', alt: 'Masala chai' },
-    { src: 'https://images.pexels.com/photos/12737919/pexels-photo-12737919.jpeg?auto=compress&cs=tinysrgb&w=600', alt: 'Indian thali' },
+    { src: '/homemade-food/cuisine-images/vegetable-poha.jpg', alt: 'Vegetable Poha - Light breakfast' },
+    { src: '/homemade-food/cuisine-images/shahi-paneer.jpg', alt: 'Shahi Paneer - Rich curry' },
+    { src: '/homemade-food/cuisine-images/masala-tea.webp', alt: 'Masala Tea - Spiced chai' },
+    { src: '/homemade-food/cuisine-images/himachali-dham.webp', alt: 'Himachali Dham - Traditional feast' },
   ];
 
   return (
