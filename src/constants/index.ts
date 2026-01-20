@@ -684,6 +684,7 @@ export const NAV_LINKS = [
   { name: 'About', path: '/about' },
   { name: 'Stay Options', path: '/stay-options' },
   { name: 'Amenities', path: '/amenities' },
+  { name: 'Homemade Food', path: '/homemade-food' },
   { name: 'Experiences', path: '/experiences' },
   { name: 'Gallery', path: '/gallery' },
   { name: 'Location', path: '/location' },

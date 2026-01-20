@@ -9,6 +9,7 @@ const WholeHomeRetreat = lazy(() => import('./pages/WholeHomeRetreat').then(m =>
 const TwoBhkHomestay = lazy(() => import('./pages/TwoBhkHomestay').then(m => ({ default: m.TwoBhkHomestay })));
 const PrivateRooms = lazy(() => import('./pages/PrivateRooms').then(m => ({ default: m.PrivateRooms })));
 const Amenities = lazy(() => import('./pages/Amenities').then(m => ({ default: m.Amenities })));
+const HomemadeFood = lazy(() => import('./pages/HomemadeFood').then(m => ({ default: m.HomemadeFood })));
 const Experiences = lazy(() => import('./pages/Experiences').then(m => ({ default: m.Experiences })));
 const Gallery = lazy(() => import('./pages/Gallery').then(m => ({ default: m.Gallery })));
 const Location = lazy(() => import('./pages/Location').then(m => ({ default: m.Location })));
@@ -37,6 +38,7 @@ function App() {
           <Route path="stay-options/2bhk-homestay" element={<Suspense fallback={<PageLoader />}><TwoBhkHomestay /></Suspense>} />
           <Route path="stay-options/private-rooms" element={<Suspense fallback={<PageLoader />}><PrivateRooms /></Suspense>} />
           <Route path="amenities" element={<Suspense fallback={<PageLoader />}><Amenities /></Suspense>} />
+          <Route path="homemade-food" element={<Suspense fallback={<PageLoader />}><HomemadeFood /></Suspense>} />
           <Route path="experiences" element={<Suspense fallback={<PageLoader />}><Experiences /></Suspense>} />
           <Route path="gallery" element={<Suspense fallback={<PageLoader />}><Gallery /></Suspense>} />
           <Route path="location" element={<Suspense fallback={<PageLoader />}><Location /></Suspense>} />
