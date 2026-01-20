@@ -52,10 +52,16 @@ const heroImages = [
 
 function HeroSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [loadedImages, setLoadedImages] = useState<Set<number>>(new Set([0, 1]));
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % heroImages.length);
+      setCurrentIndex((prev) => {
+        const next = (prev + 1) % heroImages.length;
+        const preloadNext = (next + 1) % heroImages.length;
+        setLoadedImages((loaded) => new Set([...loaded, next, preloadNext]));
+        return next;
+      });
     }, 6000);
     return () => clearInterval(interval);
   }, []);
@@ -64,15 +70,18 @@ function HeroSection() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0">
         {heroImages.map((image, index) => (
-          <img
-            key={image.src}
-            src={image.src}
-            alt="Himalayan Valley Homestead"
-            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
-              index === currentIndex ? 'opacity-100' : 'opacity-0'
-            }`}
-            style={{ objectPosition: image.objectPosition }}
-          />
+          loadedImages.has(index) && (
+            <img
+              key={image.src}
+              src={image.src}
+              alt="Himalayan Valley Homestead"
+              className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
+                index === currentIndex ? 'opacity-100' : 'opacity-0'
+              }`}
+              style={{ objectPosition: image.objectPosition }}
+              fetchPriority={index === 0 ? 'high' : 'low'}
+            />
+          )
         ))}
         <div className="absolute inset-0 bg-gradient-to-b from-stone-900/50 via-stone-900/30 to-stone-900/60" />
       </div>
@@ -240,6 +249,7 @@ function WelcomeSection() {
                 src="/entrance-road.jpg"
                 alt="Entrance road to Himalayan Valley Homestead"
                 className="w-full h-full object-cover"
+                loading="lazy"
               />
             </div>
             <div className="rounded-2xl overflow-hidden aspect-[4/3]">
@@ -247,6 +257,7 @@ function WelcomeSection() {
                 src="/hhs-hero-6.jpg"
                 alt="Himalayan Valley Homestead at night"
                 className="w-full h-full object-cover"
+                loading="lazy"
               />
             </div>
           </div>
@@ -299,6 +310,7 @@ function ImageCarousel({ images, title }: { images: { src: string; alt: string }
           src={displayImages[currentIndex]?.src}
           alt={displayImages[currentIndex]?.alt || title}
           className="w-full h-full object-cover transition-opacity duration-300"
+          loading="lazy"
         />
       </div>
       <button

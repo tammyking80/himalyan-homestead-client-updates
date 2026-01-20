@@ -36,6 +36,7 @@ export function AmenitiesShowcase() {
                     src="/room-hhs.avif"
                     alt="Comfortable bedroom"
                     className="w-full h-full object-cover"
+                    loading="lazy"
                   />
                 </div>
                 <div className="rounded-xl overflow-hidden shadow-lg">
@@ -43,6 +44,7 @@ export function AmenitiesShowcase() {
                     src="/amenities/bathroom-ntoiletries.jpg"
                     alt="Modern bathroom with toiletries"
                     className="w-full h-full object-cover"
+                    loading="lazy"
                   />
                 </div>
                 <div className="rounded-xl overflow-hidden shadow-lg">
@@ -50,6 +52,7 @@ export function AmenitiesShowcase() {
                     src="/amenities/kitchen.jpg"
                     alt="Fully equipped kitchen"
                     className="w-full h-full object-cover"
+                    loading="lazy"
                   />
                 </div>
                 <div className="rounded-xl overflow-hidden shadow-lg">
@@ -57,6 +60,7 @@ export function AmenitiesShowcase() {
                     src="/amenities/living-n-common-areas.jpg"
                     alt="Cozy living and common areas"
                     className="w-full h-full object-cover"
+                    loading="lazy"
                   />
                 </div>
               </div>
@@ -65,6 +69,7 @@ export function AmenitiesShowcase() {
                   src="/hhs-banner-about.jpg"
                   alt="Mountain living at the homestead"
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-stone-900/70 to-transparent flex items-end justify-center pb-3">
                   <span className="text-white text-sm font-medium">Mountain Living</span>

@@ -30,6 +30,7 @@ function InstagramWidget() {
             scrolling="no"
             allowTransparency
             title="Instagram Feed"
+            loading="lazy"
           />
         </div>
         <a
@@ -74,6 +75,7 @@ function FacebookWidget() {
             allowFullScreen
             allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
             title="Facebook Feed"
+            loading="lazy"
           />
         </div>
         <a
@@ -129,6 +131,7 @@ export function SocialMediaFeedsCompact() {
               scrolling="no"
               allowTransparency
               title="Instagram Feed"
+              loading="lazy"
             />
           </div>
           <div className="p-3">
@@ -158,6 +161,7 @@ export function SocialMediaFeedsCompact() {
               allowFullScreen
               allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
               title="Facebook Feed"
+              loading="lazy"
             />
           </div>
           <div className="p-3">

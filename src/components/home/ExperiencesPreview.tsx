@@ -34,6 +34,7 @@ export function ExperiencesPreview() {
           src="/life-at-homestead.jpg"
           alt="Life at the Homestead"
           className="w-full h-full object-cover"
+          loading="lazy"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-stone-900/90 via-stone-900/80 to-stone-900/90" />
       </div>
@@ -64,6 +65,7 @@ export function ExperiencesPreview() {
                   src={attraction.image}
                   alt={attraction.name}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-stone-900/90 via-stone-900/30 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-5">
